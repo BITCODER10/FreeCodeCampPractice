@@ -1,0 +1,20 @@
+html{
+    box-sizing: border-box;
+}
+span[class~="sr-only"] {
+    border: 1px solid red;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    -webkit-clip-path: inset(50%);
+    
+  
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    color: #0a0a23;
+  }
