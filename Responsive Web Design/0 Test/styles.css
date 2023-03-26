@@ -1,0 +1,39 @@
+html{
+    font-size: large;
+}
+article{
+    background-color: skyblue;
+    font-weight: bold;
+    color: black;
+    border: 1px double green;
+    margin: 0 auto;
+    padding: 5px;
+}
+div{
+    background-color: orange;
+    border: 2px dotted yellow;
+}
+body div:first-of-type{
+    border:0px;
+}
+#flex{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    width: 500px;
+    height: 5%;
+    /* align-items: center; */
+}
+/* #block{
+    display:block;
+    
+} */
+#inlineFlex{
+    display: inline-flex;
+
+    /* justify-content: space-between; */
+    width: 500px;
+}
+/* #inlineBlock{
+    display: inline-block;
+} */
