@@ -1,75 +1,107 @@
-body {
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+
+body{
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-color: #1b1b32;
-    color: #f5f6f7;
-    font-family: Tahoma;
-    font-size: 16px;
+    margin:0;
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+      background-size: cover;
+      background-repeat:no-repeat;
+      background-position: center;
+      font-family:"poppins";
+      color: var(--color-white);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
   }
-  
-  h1, p {
-    margin: 1em auto;
-    text-align: center;
-  }
-  
-  form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-  }
-  
-  fieldset {
-    border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
-  }
-  
-  fieldset:last-of-type {
-    border-bottom: none;
-  }
-  
-  label {
+#container{
+  margin: 0;
+}
+header{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+fieldset{
+  display: block;
+  margin: 1em 0;
+  padding: 10px 1em;
+  border: unset;
+}
+form, h1,p{
+  width: 700px;
+  margin: 0px auto;
+  min-width: 700px;
+  max-width: 1000px;
+}
+form{
+  font-family: inherit;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  background: linear-gradient(360deg, rgba(27,27, 50, 0.9), rgba(50,50,100, 0.9))
+}
+label{
     display: block;
-    margin: 0.5rem 0;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
   }
+.block_display label{
+  margin-bottom: unset;
+}
+option, select{
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+h1,p,#submit{
+  text-align: center;
+}
+
+textarea{
+  height: 120px;
+  width: 100%;
+  border-radius: 2px;
+  padding: 5px;
+}
+input[type="text"],input[type="number"],input[type="email"],select{
+  box-sizing: border-box;
+  height: 2.5rem;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: inherit;
+  font-family: inherit;
+}
+/* classes edfined by me  */
+
+#submit{
+  height: 2rem;
+  width: 80%;
+  display:block;
+  border-radius:10px;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: rgba(20,120,200, 0.3);
+  color: var(--color-white);
+  box-shadow: #f3f3f3;
   
-  input,
-  textarea,
-  select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-  }
-  
-  input, textarea {
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-  }
-  
-  .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
-    min-width: 300px;
-  }
-  
-  input[type="file"] {
-    padding: 1px 2px;
-  }
-  
-  
-  
+}
+.block_display{
+  display: block;
+}
+.block_display input, .block_display label{
+  display: inline-block;
+  vertical-align: auto;
+}
+hr{
+  margin: 0 auto;
+  width: 95%;
+}
